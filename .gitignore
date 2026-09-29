@@ -1,0 +1,6 @@
+#Directory
+.venv
+__pycache__
+
+#Files
+personal.py
