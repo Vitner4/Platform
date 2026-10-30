@@ -1,5 +1,4 @@
 import psycopg
-import personal
 
 
 class DataBase:
@@ -9,7 +8,7 @@ class DataBase:
             'port': 5432,
             'dbname': "platform",
             'user': "postgres",
-            "password": personal.db_pass()
+            "password": "ENTER_YOUR_PASSWORD"
         }
         self.connection = psycopg.connect(**self.connect)
         self.cursor = self.connection.cursor()
@@ -69,7 +68,7 @@ print(users.get())
 users.delete(3)
 print(users.get())
 
-users.create(3, "Wolf")
+users.create(3, "Jake")
 print(users.get())
 
 users.update(3, "Kine")
